@@ -105,7 +105,7 @@ namespace ConsoleApp1
             sw.Restart();
             var bb=source.CountAny2(3, n => n % 3 == 0);
             sw.Stop();
-            Console.WriteLine(sw.ElapsedMilliseconds);
+            Console.WriteLine(sw.ElapsedMilliseconds); 
 
             sw.Restart();
             var cc = source.Where( n => n % 3 == 0).Count()>3;
